@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AppBar = () => {
+const AppBar = ({Name}) => {
   return (
     <div>
         <div
@@ -25,7 +25,7 @@ const AppBar = () => {
               fontFamily: "Calibri",
             }}
           >
-            PHOTO EDIT
+            {Name}
           </div>
         </div>
     

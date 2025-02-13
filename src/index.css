@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@media print {
+    .page-break {
+      page-break-after: always; /* Ensures each page prints separately */
+    }
+  
+    .no-print {
+      display: none !important; /* Hides buttons and controls when printing */
+    }
+  
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  }
+   

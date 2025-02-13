@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useReactToPrint } from "react-to-print";
 import Upload from "./Upload";
 import PhotoLoop from "./PhotoLoop";
@@ -15,6 +16,8 @@ const PhotoEdit = () => {
   const [showBox, setBox] = useState(false);
   const [editingIndex, setEditingIndex] = useState(null);
   const [isDragging, setIsDragging] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleEdit = (index) => {
     setEditingIndex(index);
@@ -101,7 +104,24 @@ const PhotoEdit = () => {
       }}
     >
       <div className="bar">
-        <AppBar />
+        <AppBar 
+        Name={"PHOTO EDIT"}/>
+      </div>
+      <div style={{
+         paddingLeft: "483px",
+         paddingTop: "15px"
+      }}>
+        <button
+        onClick={()=>navigate("/Document")}
+        style={{
+          height: "31px",
+          width: "97px",
+          borderRadius: "13px",
+          color: "white",
+          background: "#0089ff",
+          border: "none",}}
+        >Document</button>
+        
       </div>
 
       <div className="upload">
