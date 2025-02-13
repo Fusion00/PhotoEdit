@@ -107,6 +107,7 @@ const PhotoEdit = () => {
         <AppBar 
         Name={"PHOTOs EDIT"}/>
       </div>
+
       <div style={{
          paddingLeft: "483px",
          paddingTop: "15px"
@@ -120,7 +121,9 @@ const PhotoEdit = () => {
           color: "white",
           background: "#0089ff",
           border: "none",}}
-        >Document</button>
+        >
+          Documents
+        </button>
         
       </div>
 
