@@ -109,7 +109,7 @@ const PhotoEdit = () => {
       </div>
 
       <div style={{
-         paddingLeft: "483px",
+         paddingLeft: "324px",
          paddingTop: "15px"
       }}>
         <button
