@@ -105,7 +105,7 @@ const PhotoEdit = () => {
     >
       <div className="bar">
         <AppBar 
-        Name={"PHOTO EDIT"}/>
+        Name={"PHOTOs EDIT"}/>
       </div>
       <div style={{
          paddingLeft: "483px",
