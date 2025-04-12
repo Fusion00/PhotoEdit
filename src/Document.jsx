@@ -36,6 +36,8 @@ const Document = () => {
 
   const navigate = useNavigate();
 
+  const [isChecked, setIsChecked] = useState(false);
+
   return (
     <div className="flex flex-col items-center gap-4">
         <div className="flex gap-5">
@@ -61,6 +63,9 @@ const Document = () => {
       >
         Print
       </button>
+      <input type="checkbox"  className="scale-150" onChange={()=>setIsChecked(!isChecked)}/>
+
+     
       
 
       <div ref={printRef} className="border-2 border-black h-[1123px] w-[794px] p-4">
@@ -71,7 +76,8 @@ const Document = () => {
             className="w-[320.64px] h-[207.36px] border-2 border-black flex items-center justify-center cursor-pointer"
             onClick={() => triggerFileInput("front")}
             style={{
-              backgroundSize: "cover",
+              backgroundSize: isChecked ? "cover" : "contain",
+              backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               backgroundImage: frontImage ? `url(${frontImage})` : "none"
             }}
@@ -84,7 +90,8 @@ const Document = () => {
             className="w-[320.64px] h-[207.36px] border-2 border-black flex items-center justify-center cursor-pointer"
             onClick={() => triggerFileInput("back")}
             style={{
-              backgroundSize: "cover",
+              backgroundSize: isChecked ? "cover" : "contain",
+              backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               backgroundImage: backImage ? `url(${backImage})` : "none"
             }}

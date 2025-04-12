@@ -36,13 +36,13 @@ const Pages = React.forwardRef(function ({ currentPage, Pics, currentSize}, ref)
               position: 'absolute',
               overflow: 'auto',
               flexWrap: 'wrap',
-              gap: "13px",
+              gap: "15px",
               rowGap:'13px',
               columnGap:'13px',
               padding: "11px",
-              margin: '-4px',
-              marginLeft:'-10px',
-              marginTop:'-9px',
+              margin: '1px',
+              marginLeft:'1px',
+              marginTop:'1px',
               alignContent: 'flex-start',
               
             }}>
@@ -103,8 +103,8 @@ const Pages = React.forwardRef(function ({ currentPage, Pics, currentSize}, ref)
               flexWrap: 'wrap',
               gap: "8px",
               padding: "5px",
-              marginLeft: '-5px',
-              marginTop:'-3px',
+              marginLeft: '1px',
+              marginTop:'-1px',
               alignContent: 'flex-start',
             }}>
                   {Pics && Pics.map((url, index) => (
